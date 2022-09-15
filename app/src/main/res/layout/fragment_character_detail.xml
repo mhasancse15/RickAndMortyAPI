@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red_light"
+        tools:context=".presentation.fragments.CharacterDetailFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/character_cl_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progress_bar_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/character_image_detail"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:contentDescription="@string/character_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/name_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/character_species_and_status_detail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Name name" />
+
+            <ImageView
+                android:id="@+id/color_indicator_detail"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/color_indicator"
+                android:src="@drawable/ic_circle_red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name_detail" />
+
+            <TextView
+                android:id="@+id/character_species_and_status_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="22dp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/character_image_detail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/color_indicator_detail"
+                tools:text="Status - species" />
+
+            <TextView
+                android:id="@+id/gender_text_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="start"
+                android:text="@string/gender"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/character_image_detail" />
+
+            <TextView
+                android:id="@+id/gender_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/character_image_detail"
+                tools:text="Male" />
+
+            <TextView
+                android:id="@+id/origin_text_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/origin"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gender_text_detail" />
+
+            <TextView
+                android:id="@+id/origin_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gender_detail"
+                tools:text="Earth" />
+
+            <TextView
+                android:id="@+id/location_text_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/location"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/origin_text_detail" />
+
+            <TextView
+                android:id="@+id/location_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/origin_detail"
+                tools:text="Earth" />
+
+            <TextView
+                android:id="@+id/type_text_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/type"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/location_text_detail" />
+
+            <TextView
+                android:id="@+id/type_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/location_detail"
+                tools:text="Planet" />
+
+            <TextView
+                android:id="@+id/dimension_text_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dimension"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/type_detail" />
+
+            <TextView
+                android:id="@+id/dimension_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/dimension_c_137"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/type_detail" />
+
+            <TextView
+                android:id="@+id/episodes_text_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/episodes"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dimension_text_detail" />
+
+            <TextView
+                android:id="@+id/episodes_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dimension_detail"
+                tools:text="3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</layout>

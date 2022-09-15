@@ -7,5 +7,21 @@
     <fragment
         android:id="@+id/charactersFragment"
         android:name="com.mahmudul.rickandmortyapi.presentation.fragments.CharactersFragment"
-        android:label="CharactersFragment" />
+        android:label="CharactersFragment">
+        <action
+            android:id="@+id/action_charactersFragment_to_characterDetailFragment"
+            app:destination="@id/characterDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.mahmudul.rickandmortyapi.presentation.fragments.CharacterDetailFragment"
+        android:label="CharacterDetailFragment">
+
+        <argument
+            android:name="character"
+            app:argType="com.mahmudul.rickandmortyapi.domain.models.Result"
+            app:nullable="true" />
+    </fragment>
+
 </navigation>

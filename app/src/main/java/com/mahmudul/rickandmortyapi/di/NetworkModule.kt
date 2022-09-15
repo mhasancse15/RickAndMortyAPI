@@ -3,6 +3,7 @@ package com.mahmudul.rickandmortyapi.di
 import com.mahmudul.rickandmortyapi.data.remote.CharacterApi
 import com.mahmudul.rickandmortyapi.data.repository.CharacterRepositoryImpl
 import com.mahmudul.rickandmortyapi.domain.repository.CharacterRepository
+import com.mahmudul.rickandmortyapi.util.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -45,7 +46,7 @@ class NetworkModule {
     @Singleton
     fun provideRetrofit(client: OkHttpClient, rxJava2CallAdapterFactory: RxJava2CallAdapterFactory): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl(Constants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(rxJava2CallAdapterFactory)
             .client(client)
