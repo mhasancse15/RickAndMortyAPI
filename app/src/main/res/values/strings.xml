@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">RickAndMortyAPI</string>
+
+    <string name="origin">Origin:</string>
+    <string name="location">Location:</string>
+    <string name="type">Type:</string>
+    <string name="dimension">Dimension:</string>
+    <string name="dimension_c_137">Dimension C-137</string>
+    <string name="episodes">Episodes:</string>
+    <string name="character_image">character_image</string>
+    <string name="color_indicator">color_indicator</string>
+    <string name="gender">Gender:</string>
+    <string name="characters_image">characters_image</string>
+    <string name="color_indicator_all">color_indicator_all</string>
+    <string name="last_known_location">Last known location:</string>
+    <string name="first_seen_in">First seen in:</string>
+
 </resources>

@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_circle_green.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/ic_circle_grey.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/ic_circle_red.xml" value="0.195" />
+        <entry key="app/src/main/res/layout/fragment_characters.xml" value="0.34375" />
+        <entry key="app/src/main/res/layout/row_character.xml" value="0.3567708333333333" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
