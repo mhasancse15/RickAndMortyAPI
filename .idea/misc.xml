@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/ic_circle_green.xml" value="0.195" />
         <entry key="app/src/main/res/drawable/ic_circle_grey.xml" value="0.195" />
         <entry key="app/src/main/res/drawable/ic_circle_red.xml" value="0.195" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3578125" />
         <entry key="app/src/main/res/layout/fragment_characters.xml" value="0.34375" />
         <entry key="app/src/main/res/layout/row_character.xml" value="0.3567708333333333" />
       </map>
